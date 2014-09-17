@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller - Recipe Store-->
+        <!--Recipe Store Table View Controller - Recipe Store-->
         <scene sceneID="why-YA-Ig2">
             <objects>
-                <tableViewController id="Z6z-uQ-jFZ" sceneMemberID="viewController">
+                <tableViewController id="Z6z-uQ-jFZ" customClass="RecipeStoreTableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="GXQ-kd-xbm">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -36,6 +36,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="NTV-MS-Y7A" kind="modal" identifier="UpdateRecipe" id="Yie-7c-Udk"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -55,10 +58,10 @@
             </objects>
             <point key="canvasLocation" x="460" y="93"/>
         </scene>
-        <!--View Controller - Add Recipe-->
+        <!--Add Recipe View Controller - Add Recipe-->
         <scene sceneID="QUj-G1-tVF">
             <objects>
-                <viewController id="Psj-FH-AuL" sceneMemberID="viewController">
+                <viewController id="Psj-FH-AuL" customClass="AddRecipeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2Ov-Nv-hpE"/>
                         <viewControllerLayoutGuide type="bottom" id="i5S-By-ejl"/>
@@ -89,9 +92,22 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add Recipe" id="aSb-bA-puB">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="lZf-ZD-Qdr"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="lWS-MP-9CF"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="lZf-ZD-Qdr">
+                            <connections>
+                                <action selector="cancel:" destination="Psj-FH-AuL" id="aNg-SN-Ox1"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="lWS-MP-9CF">
+                            <connections>
+                                <action selector="save:" destination="Psj-FH-AuL" id="BnL-Hb-sq1"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="imageTextField" destination="94B-av-Szn" id="HAn-so-EzV"/>
+                        <outlet property="nameTextField" destination="S3O-uL-JHa" id="zbz-Uk-fjC"/>
+                        <outlet property="prepTimeTextField" destination="aKv-Ch-fW1" id="EXl-vv-lCm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qIA-Mc-XMP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -139,4 +155,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="Yie-7c-Udk"/>
+    </inferredMetricsTieBreakers>
 </document>

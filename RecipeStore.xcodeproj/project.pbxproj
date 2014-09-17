@@ -23,6 +23,8 @@
 		651EA0A519C898B700EA2DC1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 651EA0A319C898B700EA2DC1 /* InfoPlist.strings */; };
 		651EA0A719C898B700EA2DC1 /* RecipeStoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 651EA0A619C898B700EA2DC1 /* RecipeStoreTests.m */; };
 		651EA0B119C89A4100EA2DC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 651EA0B019C89A4100EA2DC1 /* Main.storyboard */; };
+		651EA0B419C99C2D00EA2DC1 /* RecipeStoreTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 651EA0B319C99C2D00EA2DC1 /* RecipeStoreTableViewController.m */; };
+		651EA0B719C99D6800EA2DC1 /* AddRecipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 651EA0B619C99D6800EA2DC1 /* AddRecipeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,10 @@
 		651EA0A419C898B700EA2DC1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		651EA0A619C898B700EA2DC1 /* RecipeStoreTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecipeStoreTests.m; sourceTree = "<group>"; };
 		651EA0B019C89A4100EA2DC1 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		651EA0B219C99C2D00EA2DC1 /* RecipeStoreTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeStoreTableViewController.h; sourceTree = "<group>"; };
+		651EA0B319C99C2D00EA2DC1 /* RecipeStoreTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeStoreTableViewController.m; sourceTree = "<group>"; };
+		651EA0B519C99D6800EA2DC1 /* AddRecipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddRecipeViewController.h; sourceTree = "<group>"; };
+		651EA0B619C99D6800EA2DC1 /* AddRecipeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddRecipeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +129,10 @@
 				651EA08F19C898B700EA2DC1 /* RecipeStore.xcdatamodeld */,
 				651EA08419C898B600EA2DC1 /* Supporting Files */,
 				651EA0B019C89A4100EA2DC1 /* Main.storyboard */,
+				651EA0B219C99C2D00EA2DC1 /* RecipeStoreTableViewController.h */,
+				651EA0B319C99C2D00EA2DC1 /* RecipeStoreTableViewController.m */,
+				651EA0B519C99D6800EA2DC1 /* AddRecipeViewController.h */,
+				651EA0B619C99D6800EA2DC1 /* AddRecipeViewController.m */,
 			);
 			path = RecipeStore;
 			sourceTree = "<group>";
@@ -255,7 +265,9 @@
 			files = (
 				651EA09119C898B700EA2DC1 /* RecipeStore.xcdatamodeld in Sources */,
 				651EA08E19C898B700EA2DC1 /* RecipeStoreAppDelegate.m in Sources */,
+				651EA0B419C99C2D00EA2DC1 /* RecipeStoreTableViewController.m in Sources */,
 				651EA08A19C898B700EA2DC1 /* main.m in Sources */,
+				651EA0B719C99D6800EA2DC1 /* AddRecipeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
