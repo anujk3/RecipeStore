@@ -22,6 +22,7 @@
 		651EA09D19C898B700EA2DC1 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 651EA08119C898B600EA2DC1 /* CoreData.framework */; };
 		651EA0A519C898B700EA2DC1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 651EA0A319C898B700EA2DC1 /* InfoPlist.strings */; };
 		651EA0A719C898B700EA2DC1 /* RecipeStoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 651EA0A619C898B700EA2DC1 /* RecipeStoreTests.m */; };
+		651EA0B119C89A4100EA2DC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 651EA0B019C89A4100EA2DC1 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		651EA0A219C898B700EA2DC1 /* RecipeStoreTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RecipeStoreTests-Info.plist"; sourceTree = "<group>"; };
 		651EA0A419C898B700EA2DC1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		651EA0A619C898B700EA2DC1 /* RecipeStoreTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecipeStoreTests.m; sourceTree = "<group>"; };
+		651EA0B019C89A4100EA2DC1 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				651EA09219C898B700EA2DC1 /* Images.xcassets */,
 				651EA08F19C898B700EA2DC1 /* RecipeStore.xcdatamodeld */,
 				651EA08419C898B600EA2DC1 /* Supporting Files */,
+				651EA0B019C89A4100EA2DC1 /* Main.storyboard */,
 			);
 			path = RecipeStore;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				651EA0B119C89A4100EA2DC1 /* Main.storyboard in Resources */,
 				651EA08819C898B700EA2DC1 /* InfoPlist.strings in Resources */,
 				651EA09319C898B700EA2DC1 /* Images.xcassets in Resources */,
 			);
